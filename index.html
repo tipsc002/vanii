@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2565356187296650');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2565356187296650&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CLUB TOSS FIXER - Official Telegram Channel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #070913;
+            --card-bg: rgba(18, 24, 43, 0.75);
+            --card-border: rgba(255, 255, 255, 0.12);
+            --primary-emerald: #00e676;
+            --primary-glow: #00c853;
+            --accent-cyan: #00f2fe;
+            --accent-gold: #ffb700;
+            --text-main: #ffffff;
+            --text-sub: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image:
+                radial-gradient(at 10% 10%, rgba(0, 230, 118, 0.15) 0px, transparent 50%),
+                radial-gradient(at 90% 90%, rgba(0, 242, 254, 0.15) 0px, transparent 50%),
+                radial-gradient(at 50% 50%, rgba(255, 183, 0, 0.08) 0px, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 14px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .ambient-glow {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(90px);
+            opacity: 0.45;
+            z-index: 0;
+            pointer-events: none;
+            animation: pulseGlow 8s infinite alternate ease-in-out;
+        }
+
+        .glow-1 {
+            width: 320px;
+            height: 320px;
+            background: var(--primary-emerald);
+            top: -60px;
+            left: -60px;
+        }
+
+        .glow-2 {
+            width: 350px;
+            height: 350px;
+            background: var(--accent-cyan);
+            bottom: -80px;
+            right: -60px;
+            animation-delay: -4s;
+        }
+
+        @keyframes pulseGlow {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.35;
+            }
+
+            100% {
+                transform: translate(30px, 40px) scale(1.15);
+                opacity: 0.55;
+            }
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid var(--card-border);
+            border-radius: 28px;
+            padding: 36px 24px 28px 24px;
+            width: 100%;
+            max-width: 440px;
+            z-index: 10;
+            text-align: center;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+            position: relative;
+            animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.97);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .live-status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 230, 118, 0.12);
+            border: 1px solid rgba(0, 230, 118, 0.3);
+            color: #69f0ae;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary-emerald);
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0 0 10px var(--primary-emerald);
+        }
+
+        .pulse-dot::after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            width: 16px;
+            height: 16px;
+            background-color: var(--primary-emerald);
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
+
+        @keyframes ping {
+
+            75%,
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+        .avatar-wrapper {
+            position: relative;
+            width: 128px;
+            height: 128px;
+            margin: 0 auto 20px;
+        }
+
+        .avatar-ring {
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-emerald), var(--accent-cyan), var(--accent-gold));
+            z-index: -1;
+            animation: spinRing 6s linear infinite;
+            filter: drop-shadow(0 0 12px rgba(0, 230, 118, 0.5));
+        }
+
+        @keyframes spinRing {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .avatar-box {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #162035, #0d1322);
+            border: 4px solid #0d1220;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .avatar-text {
+            font-size: 48px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #00e676, #00f2fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .verified-badge {
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+            background: #00c853;
+            color: #ffffff;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #0d1220;
+            box-shadow: 0 4px 10px rgba(0, 200, 83, 0.5);
+        }
+
+        .verified-badge svg {
+            width: 14px;
+            height: 14px;
+            stroke-width: 3;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.3px;
+            margin-bottom: 6px;
+            background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        .sub-tag {
+            display: inline-block;
+            background: rgba(255, 183, 0, 0.12);
+            color: var(--accent-gold);
+            border: 1px solid rgba(255, 183, 0, 0.25);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+
+        .stats-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 18px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 16px 8px;
+            margin-bottom: 24px;
+            gap: 4px;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .stat-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 15%;
+            height: 70%;
+            width: 1px;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .stat-val {
+            font-size: 19px;
+            font-weight: 800;
+            color: var(--primary-emerald);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .stat-lbl {
+            font-size: 10px;
+            color: var(--text-sub);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 3px;
+        }
+
+        .features-list {
+            text-align: left;
+            margin-bottom: 26px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .feature-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            padding: 12px 14px;
+            border-radius: 14px;
+        }
+
+        .feature-icon-box {
+            width: 32px;
+            height: 32px;
+            border-radius: 10px;
+            background: rgba(0, 230, 118, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .feature-icon-box svg {
+            width: 18px;
+            height: 18px;
+            stroke: var(--primary-emerald);
+        }
+
+        .feature-text {
+            font-size: 13px;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+
+        .feature-text span {
+            color: var(--text-sub);
+            font-weight: 400;
+            font-size: 12px;
+            display: block;
+        }
+
+        .cta-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 18px 24px;
+            background: linear-gradient(135deg, #00c853 0%, #00e676 50%, #00b0ff 100%);
+            background-size: 200% auto;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 16px;
+            font-weight: 800;
+            font-size: 17px;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            box-shadow: 0 12px 30px rgba(0, 200, 83, 0.45);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+            animation: pulseBtn 2.2s infinite ease-in-out;
+        }
+
+        @keyframes pulseBtn {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.6);
+            }
+
+            70% {
+                box-shadow: 0 0 0 16px rgba(0, 230, 118, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 230, 118, 0);
+            }
+        }
+
+        .cta-button:hover,
+        .cta-button:active {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 36px rgba(0, 230, 118, 0.65);
+            background-position: right center;
+        }
+
+        .cta-button svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+        }
+
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 50%;
+            height: 200%;
+            background: linear-gradient(90deg,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 0.4) 50%,
+                    rgba(255, 255, 255, 0) 100%);
+            transform: rotate(25deg);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                left: -60%;
+            }
+
+            20% {
+                left: 140%;
+            }
+
+            100% {
+                left: 140%;
+            }
+        }
+
+        .guarantee-note {
+            margin-top: 14px;
+            font-size: 11px;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-weight: 500;
+        }
+
+        .guarantee-note svg {
+            width: 14px;
+            height: 14px;
+            stroke: #64748b;
+        }
+
+        .toast-notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 230, 118, 0.3);
+            border-radius: 30px;
+            padding: 10px 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            z-index: 100;
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            width: 90%;
+            max-width: 340px;
+        }
+
+        .toast-notification.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        .toast-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-emerald), var(--accent-cyan));
+            color: #000;
+            font-weight: 800;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .toast-text {
+            font-size: 12px;
+            color: #e2e8f0;
+            text-align: left;
+        }
+
+        .toast-text bold {
+            color: var(--primary-emerald);
+            font-weight: 700;
+        }
+
+        .toast-time {
+            font-size: 10px;
+            color: #64748b;
+            margin-left: auto;
+        }
+
+        .disclaimer-box {
+            margin-top: 18px;
+            padding-top: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 10px;
+            color: #64748b;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        .disclaimer-box strong {
+            color: #94a3b8;
+        }
+
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .avatar-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            margin-top: 14px;
+            font-size: 11px;
+            color: #475569;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <div class="glass-card">
+
+        <div class="live-status-pill">
+            <span class="pulse-dot"></span>
+            LIVE • 5,820+ ONLINE NOW
+        </div>
+
+        <div class="avatar-wrapper">
+            <div class="avatar-ring"></div>
+            <div class="avatar-box">
+                <img src="logoo.jpg" alt="CLUB TOSS FIXER Logo" class="avatar-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <svg class="avatar-svg" viewBox="0 0 100 100" style="display:none;" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logo-grad-matthew" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#00e676" />
+                            <stop offset="50%" stop-color="#00f2fe" />
+                            <stop offset="100%" stop-color="#ffb700" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="46" fill="url(#logo-grad-matthew)" opacity="0.12" />
+                    <circle cx="50" cy="50" r="44" stroke="url(#logo-grad-matthew)" stroke-width="2.5" fill="none"
+                        opacity="0.7" />
+                    <path d="M28 72 L72 28" stroke="url(#logo-grad-matthew)" stroke-width="4" stroke-linecap="round"
+                        opacity="0.35" />
+                    <circle cx="70" cy="30" r="5" fill="#ffb700" />
+                    <text x="50" y="63" font-family="'Outfit', sans-serif" font-weight="900" font-size="38"
+                        fill="url(#logo-grad-matthew)" text-anchor="middle">M</text>
+                </svg>
+            </div>
+            <div class="verified-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+        </div>
+
+        <h1>CLUB TOSS FIXER</h1>
+        <div class="sub-tag">NUMBER 1 CRICKET ANALYST</div>
+
+       
+
+        <div class="features-list">
+            <div class="feature-row">
+                <div class="feature-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+                <div class="feature-text">
+                    Daily Toss & Match Analysis
+                    <span>High precision accuracy report before every match</span>
+                </div>
+            </div>
+
+            <div class="feature-row">
+                <div class="feature-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                        <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                </div>
+                <div class="feature-text">
+                    IPL & International Sess!0n Tips
+                    <span>Jackpot match entry signals & ball-by-ball updates</span>
+                </div>
+            </div>
+
+            <!-- <div class="feature-row">
+                <div class="feature-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <div class="feature-text">
+                    Safe Analysis Strategy
+                    <span>Verified capital protection & management</span>
+                </div>
+            </div> -->
+        </div>
+
+        <a href="https://t.me/+SuZ0lGRwgTE1ZDQ1" class="cta-button">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.67-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.25.38-.51 1.07-.78 4.19-1.82 6.99-3.02 8.4-3.6 4-.1.68 4.84.18 4.64.8z" />
+            </svg>
+            JOIN FREE TELEGRAM CHANNEL
+        </a>
+
+        <div class="guarantee-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            100% Free VIP Channel • No Fee Charged
+        </div>
+
+        <div class="disclaimer-box">
+            <strong>Disclaimer :</strong> This channel and website provide cricket match statistics,
+            information, and analysis for educational and news purposes only.
+        </div>
+
+        <footer>
+            <a href="https://t.me/+OqzG0AZ_MTtmOGE1" target="_blank" rel="noopener noreferrer" style="color: wheat;" >Ads Agency Saurabh9xz</a>
+        </footer>
+    </div>
+
+    <div class="toast-notification" id="toast">
+        <div class="toast-avatar" id="toast-initial">R</div>
+        <div class="toast-text" id="toast-msg">
+            <bold>Rohit M.</bold> from Mumbai joined channel
+        </div>
+        <div class="toast-time" id="toast-time">2s ago</div>
+    </div>
+
+    <script>
+        const names = ["Rahul K.", "Vikram S.", "Rohit M.", "Deepak P.", "Amit Sharma", "Suresh G.", "Ankit V.", "Pankaj R."];
+        const cities = ["Delhi", "Mumbai", "Jaipur", "Kolkata", "Ahmedabad", "Chandigarh", "Lucknow", "Indore"];
+
+        function showToast() {
+            const name = names[Math.floor(Math.random() * names.length)];
+            const city = cities[Math.floor(Math.random() * cities.length)];
+            const toast = document.getElementById('toast');
+
+            document.getElementById('toast-initial').innerText = name.charAt(0);
+            document.getElementById('toast-msg').innerHTML = `<bold>${name}</bold> from ${city} joined channel`;
+            document.getElementById('toast-time').innerText = Math.floor(Math.random() * 8 + 2) + 's ago';
+
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+        }
+
+        setTimeout(showToast, 2500);
+        setInterval(showToast, 8000);
+    </script>
+</body>
+
+</html>
